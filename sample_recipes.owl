@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#IngredientsBasket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <rdfs:comment>Ingredients basked contains ingredients</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#holds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#holds">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient"/>
+        <rdfs:comment>container holds amount of ingredient</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#requires">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Recipe"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <rdfs:comment>Recipe requires ingredient</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#directions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#directions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Recipe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#measuringUnits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#measuringUnits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#quantity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#IngredientsBasket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#IngredientsBasket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Recipe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Recipe"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ApplePieApples -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ApplePieApples">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#apple"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">count</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ApplePieDough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ApplePieDough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#dough"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">400</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Apple_Pie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Apple_Pie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Recipe"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ApplePieApples"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ApplePieDough"/>
+        <directions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bake for 5 minutes</directions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ChickenRiceChicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ChickenRiceChicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#chicken"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">600</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ChickenRicePeas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ChickenRicePeas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#peas"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">200</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ChickenRiceRice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ChickenRiceRice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#rice"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">400</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#PeaStuffedChicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#PeaStuffedChicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Recipe"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#PeaStuffedChickenChicken"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#PeaStuffedChickenPeas"/>
+        <directions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">put peas in whole chicken, bake</directions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#PeaStuffedChickenChicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#PeaStuffedChickenChicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#chicken"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">400</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#PeaStuffedChickenPeas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#PeaStuffedChickenPeas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#peas"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">250</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#RiceChicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#RiceChicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Recipe"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ChickenRiceChicken"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ChickenRicePeas"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#ChickenRiceRice"/>
+        <directions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">put chicken in rice, bake</directions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetables -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetables">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Recipe"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetablesCarrots"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetablesCorn"/>
+        <requires rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetablesPeas"/>
+        <directions rdf:datatype="http://www.w3.org/2001/XMLSchema#string">put vegetables in pan, steam them</directions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetablesCarrots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetablesCarrots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#carrot"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">400</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetablesCorn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetablesCorn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#corn"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">600</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetablesPeas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#SteamedVegetablesPeas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#peas"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">600</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#IngredientsBasket"/>
+        <contains rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1Chicken"/>
+        <contains rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1Peas"/>
+        <contains rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1Rice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1Chicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1Chicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#chicken"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1000</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1Peas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1Peas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#peas"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">900</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1Rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#basket1Rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Container"/>
+        <holds rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#rice"/>
+        <measuringUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</measuringUnits>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1000</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#carrot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#carrot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#chicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#chicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#corn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#corn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#dough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#dough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#peas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#peas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/simeon/ontologies/2023/0/untitled-ontology-2#Ingredient"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
