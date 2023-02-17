@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    #search {
+        background-color: coral;
+        padding: 5px 15px;
+        color: white;
+        border:  none;
+        font-size: 20px;
+    }
+
+    #addIngredient {
+        background-color: cornflowerblue;
+        padding: 5px 15px;
+        color: white;
+        border:  none;
+        font-size: 20px;
+    }
+
+    table {
+        margin-top: 100px;
+    }
+</style>
+<body>
+    <input type="text" name="ingredient" id="ingredient" placeholder="Продукт">
+    <input type="text" name="units" id="units" placeholder="мерна единица">
+    <input type="text" name="quantity" id="quantity" placeholder="количество">
+    <button id="addIngredient">Добави</button>
+    <button id="search">Търси</button>
+
+    <table id="recipes" style="width: 100%;">
+        <tr>
+            <th>Рецепта</th>
+            <th>Брой порции</th>
+            <th>Начин на приготвяне</th>
+        </tr>
+    </table>
+    
+</body>
+
+<script src="driver.js"></script>
+</html>
